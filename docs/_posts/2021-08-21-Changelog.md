@@ -1,5 +1,5 @@
 ---
-title: "Upcoming Features"
+title: "Changelogs"
 categories:
   - Features
 tags:
