@@ -3,9 +3,7 @@ title: "Changelogs"
 categories:
   - Features
 tags:
-  - feat
-  - enhancement
-  - nsfw
+  - changelog
 last_modified_at: 2021-08-13
 ---
 
