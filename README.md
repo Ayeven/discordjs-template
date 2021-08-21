@@ -14,3 +14,7 @@ Command(s) may not working without proper intent.
 
 For more info about intents checkout the [official Discord.js guide page](https://discordjs.guide/popular-topics/intents.html) and the [official Discord docs page](https://discord.com/developers/docs/topics/gateway#gateway-intents).
 
+## Github Pages
+
+- Together with this repository, I also included Jekyll Theme for generating static html webpage for discord bot web page
+Go to this [link](https://ayeven.github.io/discordjs-template/)
