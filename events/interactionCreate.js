@@ -1,6 +1,6 @@
 const { Collection } = require('discord.js');
 const cooldown = new Collection();
-const moment = require('moment');
+const moment = require('dayjs');
 const { owner } = require('../setting/setting.json');
 module.exports = {
 	name: 'interactionCreate',

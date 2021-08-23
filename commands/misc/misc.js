@@ -1,7 +1,8 @@
 const { MessageButton, version, Constants } = require('discord.js');
 const opt = Constants.ApplicationCommandOptionTypes;
-const moment = require('moment');
-require('moment-duration-format');
+const moment = require('dayjs');
+const dur = require('dayjs/plugin/duration');
+moment.extend(dur);
 module.exports = {
 	name: 'misc',
 	description: 'Misc functions for the bot',
@@ -56,14 +57,14 @@ module.exports = {
 				interaction.editReply({ content:
                     `\`\`\`asciidoc
                     = STATISTICS =
-                • Mem Usage  :: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB
-                • Uptime     :: ${duration}
-                • Discord.js :: v${version}
-                • Node       :: ${process.version}
-                • User       :: ${interaction.client.users.cache.size.toLocaleString()}
-                • Channels   :: ${interaction.client.channels.cache.size.toLocaleString()}
-                • Guilds     :: ${interaction.client.guilds.cache.size.toLocaleString()}
-                • Platform   :: ${process.platform} ${process.arch}\`\`\`` });
+            • Mem Usage  :: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB
+            • Uptime     :: ${duration}
+            • Discord.js :: v${version}
+            • Node       :: ${process.version}
+            • User       :: ${interaction.client.users.cache.size.toLocaleString()}
+            • Channels   :: ${interaction.client.channels.cache.size.toLocaleString()}
+            • Guilds     :: ${interaction.client.guilds.cache.size.toLocaleString()}
+            • Platform   :: ${process.platform} ${process.arch}\`\`\`` });
 				break;
 			}
 		}

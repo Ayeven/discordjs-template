@@ -1,4 +1,4 @@
-const moment = require('moment');
+const moment = require('dayjs');
 const { guildId } = require('../setting/setting.json');
 module.exports = {
 	name: 'ready',
